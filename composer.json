@@ -1,0 +1,17 @@
+{
+    "name": "habibrajput/lara-html",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "habib.Ur.Rehman",
+            "email": "habib.dev.vr2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Habibrajput\\Larahtml\\": "src/"
+        }
+    }
+}
