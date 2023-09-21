@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 sacnGivenDir(base_path(config('larahtml.view_base_path')));
 function sacnGivenDir($directory) {
-   // 
+
     $directory_stack = array($directory);
     $ignored_filename = array(
         '.git' => true,
@@ -28,8 +28,10 @@ function sacnGivenDir($directory) {
             else if (is_dir($pathname) === TRUE) {
                 $directory_stack[] = $pathname;
             } else if (pathinfo($pathname, PATHINFO_EXTENSION) === 'php') {
-                $split_main_dir = explode('resources/views/',$pathname);
-                appendRoute($split_main_dir[1]);
+                if(isset($split_main_dir[1])){
+                    $split_main_dir = explode('resources/views/',$pathname);
+                    appendRoute($split_main_dir[1]);
+                }
             }
         }
     }
