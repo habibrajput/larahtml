@@ -13,5 +13,12 @@
         "psr-4": {
             "Habibrajput\\Larahtml\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Habibrajput\\Larahtml\\LaraHtmlServiceProvider"
+            ] 
+        }
+    } 
 }
