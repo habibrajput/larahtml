@@ -1,6 +1,6 @@
 {
     "name": "habibrajput/lara-html",
-    "description": "This will send email to admin and save contact query in database",
+    "description": "Package is used to access html, php, .blade.php files with creating controller and adding  routes in web.php files.",
     "type": "library",
     "license": "MIT",
     "authors": [
