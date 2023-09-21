@@ -1,5 +1,7 @@
 {
     "name": "habibrajput/lara-html",
+    "description": "This will send email to admin and save contact query in database",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
