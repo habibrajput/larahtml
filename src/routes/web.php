@@ -28,8 +28,9 @@ function sacnGivenDir($directory) {
             else if (is_dir($pathname) === TRUE) {
                 $directory_stack[] = $pathname;
             } else if (pathinfo($pathname, PATHINFO_EXTENSION) === 'php') {
+                $split_main_dir = explode('resources/views/',$pathname);
+
                 if(isset($split_main_dir[1])){
-                    $split_main_dir = explode('resources/views/',$pathname);
                     appendRoute($split_main_dir[1]);
                 }
             }
