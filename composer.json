@@ -27,7 +27,7 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "@php artisan vendor:publish --tag={v1.0.4}--force"
+            "@php artisan vendor:publish --tag={v1.0.5}--force"
         ]
     }
 }
