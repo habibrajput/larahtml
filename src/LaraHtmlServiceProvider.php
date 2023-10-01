@@ -15,7 +15,8 @@ class LaraHtmlServiceProvider extends ServiceProvider
         );
         $this->publishes([
             __DIR__ . '/config/larahtml.php' => config_path('larahtml.php'),
-        ]);
+        ],
+        ['lara-html']);
     }
 
     public function register() 
