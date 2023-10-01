@@ -32,7 +32,6 @@
         "post-install-cmd": [
             "@php artisan package:discover --ansi",
             "@php artisan vendor:publish --tag=lara-html --force"
-            "php artisan vendor:publish --provider="\Habibrajput\\Larahtml\\LaraHtmlServiceProvider\" --tag=tag=lara-html --force"
         ]
     }
 }
