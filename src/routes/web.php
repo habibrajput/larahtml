@@ -41,9 +41,9 @@ function appendRoute($slug)
     //Route name
     $getRouteName = substr($removeBladePhpExtention, strpos($removeBladePhpExtention, 'views') + strlen('views'));
     //View name
-    $viewRaw = preg_replace('|\\\\|',  '.', $getRouteName);
-    echo "Route Name - " . $getRouteName . " View name - " . $viewRaw . "<br>";
-    Route::get($getRouteName, function () use ($viewRaw) {
+    $viewRaw = preg_replace('/^./', '', preg_replace('|\\\\|',  '.', $getRouteName));
+    $route =  ltrim($getRouteName, '|\\\\|');
+    Route::get(str_replace("\\", "/", $route), function () use ($viewRaw) {
         return view($viewRaw);
     });
 }
