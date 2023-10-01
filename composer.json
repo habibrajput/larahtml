@@ -20,14 +20,14 @@
         "laravel": {
             "providers": [
                 "Habibrajput\\Larahtml\\LaraHtmlServiceProvider"
-            ] 
+            ]
         }
     },
     "scripts": {
-    "post-autoload-dump": [
-        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-        "@php artisan package:discover --ansi",
-        "@php artisan vendor:publish --tag={tagNameHere}--force"
-     ]
-   },
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan vendor:publish --tag={v1.0.4}--force"
+        ]
+    }
 }
