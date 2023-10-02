@@ -24,17 +24,17 @@
       "publish": [
         {
           "provider": "Habibrajput\\Larahtml\\LaraHtmlServiceProvider",
-          "tag": "config"
+          "tag": "assets"
         }
       ]
     }
   },
   "scripts": {
     "post-install-cmd": [
-      "php artisan asset:publish --tag=config --force"
+      "php artisan asset:publish --tag=assets --force"
     ],
     "post-update-cmd": [
-      "php artisan asset:publish --tag=config --force"
+      "php artisan asset:publish --tag=assets --force"
     ]
   }
 }
