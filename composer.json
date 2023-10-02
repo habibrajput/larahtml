@@ -24,14 +24,11 @@
         }
     },
     "scripts": {
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi",
-            "@php artisan vendor:publish --tag=lara-html --force"
-        ],
         "post-install-cmd": [
-            "@php artisan package:discover --ansi",
-            "@php artisan vendor:publish --tag=lara-html --force"
+            "@php artisan vendor:publish --tag=config --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=config --ansi"
         ]
     }
 }
