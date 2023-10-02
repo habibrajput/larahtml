@@ -25,10 +25,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "@php artisan vendor:publish --tag=config --ansi"
+            "@php artisan vendor:publish --tag=lara-html --ansi"
         ],
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=config --ansi"
+            "@php artisan vendor:publish --tag=lara-html --ansi"
         ]
     }
 }
